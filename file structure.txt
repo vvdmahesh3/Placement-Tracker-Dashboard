@@ -1,0 +1,58 @@
+Create Files:
+
+index.html (for the frontend structure).
+
+style.css (for styling).
+
+script.js (for functionality and Firebase integration).
+
+
+/placement-tracker-dashboard
+  ├── index.html                  # Landing Page
+  ├── login.html                  # Login Page
+  ├── signup.html                 # Signup Page
+  ├── dashboard.html              # Dashboard Page
+  ├── applications.html           # Application Tracker Page
+  ├── interviews.html             # Interview Schedule Page
+  ├── profile.html                # Profile Page
+  ├── assets/
+      ├── css/
+          ├── style.css           # Global CSS (shared styles)
+          ├── landing.css         # Specific CSS for Landing Page
+          ├── login.css           # Specific CSS for Login Page
+          ├── signup.css          # Specific CSS for Signup Page
+          ├── dashboard.css       # Specific CSS for Dashboard Page
+          ├── applications.css    # Specific CSS for Application Tracker Page
+          ├── interviews.css      # Specific CSS for Interview Schedule Page
+          ├── profile.css         # Specific CSS for Profile Page
+      ├── js/
+          ├── script.js           # Global JavaScript (shared functionality)
+          ├── login.js            # Specific JS for Login Page
+          ├── signup.js           # Specific JS for Signup Page
+          ├── dashboard.js        # Specific JS for Dashboard Page
+          ├── applications.js     # Specific JS for Application Tracker Page
+          ├── interviews.js       # Specific JS for Interview Schedule Page
+          ├── profile.js          # Specific JS for Profile Page
+      ├── images/                 # All images used in the website
+      ├── videos/                 # All videos used in the website
+      └── fonts/                  # Custom fonts (if any)
+
+Explanation of Files
+1. HTML Files
+Place all your HTML files (e.g., index.html, login.html, signup.html) directly in the root folder of your project (/placement-tracker-dashboard).
+This makes it easier to link to them and navigate between pages.
+
+2. CSS Files
+Place all your CSS files in the assets/css/ folder.
+Use a global CSS file (style.css) for shared styles (e.g., fonts, colors, buttons).
+Use page-specific CSS files (e.g., landing.css, login.css) for unique styles for each page.
+
+3. JavaScript (JS) Files
+Place all your JavaScript files in the assets/js/ folder.
+Use a global JS file (script.js) for shared functionality (e.g., animations, common functions).
+Use page-specific JS files (e.g., login.js, dashboard.js) for unique functionality for each page.
+
+4. Assets Folder
+Images: Store all images (e.g., logos, icons, banners) in the assets/images/ folder.
+Videos: Store all videos (e.g., background videos) in the assets/videos/ folder.
+Fonts: Store custom fonts (if any) in the assets/fonts/ folder.

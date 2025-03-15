@@ -1,0 +1,190 @@
+/*CSS for both page */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #333333;
+    color: #F5F5F5;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1F6BFF;
+    color: #FFFFFF;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .sidebar .logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .sidebar ul li a i {
+    margin-right: 10px;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .theme-toggle button {
+    background-color: #0047B3;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  body.dark-mode .container {
+    background-color: #444444;
+    color: #F5F5F5;
+  }
+  
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #1F6BFF;
+  }
+  
+  body.dark-mode h2 {
+    color: #00C853;
+  }
+  
+  /* Forms */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    background-color: #1F6BFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0047B3;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  
+  table th {
+    background-color: #1F6BFF;
+    color: #FFFFFF;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  body.dark-mode .card {
+    background-color: #444444;
+    color: #F5F5F5;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #1F6BFF;
+  }
+  
+  body.dark-mode .card h3 {
+    color: #00C853;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }

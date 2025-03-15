@@ -1,0 +1,8 @@
+placement-tracker/
+│
+├── login.html          # Login page
+├── index.html          # Main dashboard
+├── style.css           # CSS for both pages
+├── script.js           # JavaScript for both pages
+├── logo.png            # Logo image
+└── firebase-config.js  # Firebase configuration (optional)

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Scheduler - Placement Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/interviews.css">
+</head>
+<body class="interviews-page">
+  <!-- Particle.js Container -->
+  <div id="particles-js"></div>
+
+  <!-- Interview Scheduler Content -->
+  <div class="content">
+    <h1 class="interviews-heading">INTERVIEW SCHEDULER</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google</td>
+          <td>Software Engineer</td>
+          <td>2025-01-08</td>
+          <td>Scheduled</td>
+          <td>
+            <button class="btn">Edit</button>
+            <button class="btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Microsoft</td>
+          <td>Data Analyst</td>
+          <td>2024-12-24</td>
+          <td>Cleared</td>
+          <td>
+            <button class="btn">Edit</button>
+            <button class="btn delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+            <td>Infosys</td>
+            <td>Full-stack Engineer</td>
+            <td>2019-12-24</td>
+            <td>offered</td>
+            <td>
+              <button class="btn">Edit</button>
+              <button class="btn delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Pragati Engineering College</td>
+            <td>Principal</td>
+            <td>2026-01-01</td>
+            <td>Selected</td>
+            <td>
+              <button class="btn">Edit</button>
+              <button class="btn delete">Delete</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+    <!-- Back Button -->
+    <div class="back-button">
+      <button class="button-86" role="button" onclick="window.location.href='dashboard.html'">BACK</button>
+    </div>
+  </div>
+
+  <!-- Link JS files -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/interviews.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Background and General Styling */
+body.interviews-page {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #000; /* Fallback background */
+  }
+  
+  /* Particle.js Container */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0A2647, #144272, #2C74B3, #205295); /* Blue gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite; /* Reduced time for color change */
+    z-index: -1; /* Place behind the content */
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Interview Scheduler Content */
+  .content {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(44, 116, 179, 0.5);
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure content is above the background */
+    border: 1px solid rgba(44, 116, 179, 0.3);
+    animation: containerGlow 3s infinite alternate;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  @keyframes containerGlow {
+    0% { box-shadow: 0 0 10px rgba(44, 116, 179, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(44, 116, 179, 0.8); }
+  }
+  
+  /* Interview Scheduler Heading */
+  .interviews-heading {
+    font-size: 3.5rem; /* Adjusted font size */
+    margin-bottom: 40px; /* Increased margin */
+    color: #2C74B3; /* Blue color for heading */
+    text-shadow: 
+      0 0 10px rgba(44, 116, 179, 0.7), 
+      0 0 20px rgba(44, 116, 179, 0.7), 
+      0 0 40px rgba(44, 116, 179, 0.7); /* Enhanced glow effect */
+    font-family: 'Righteous', cursive; /* Retro pixelated font */
+    animation: glow 2s infinite alternate;
+    width: 100%; /* Ensure heading spans full width */
+    text-align: center;
+    position: relative;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 4px; /* Increased letter spacing */
+    background: linear-gradient(45deg, #2C74B3, #205295); /* Gradient background for text */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text; /* Standard property for compatibility */
+    -webkit-text-fill-color: transparent; /* Transparent text color */
+    padding: 10px 0; /* Add padding for better spacing */
+  }
+  
+  /* Glow Animation for Heading */
+  @keyframes glow {
+    0% { text-shadow: 0 0 10px rgba(44, 116, 179, 0.7); }
+    100% { text-shadow: 0 0 20px rgba(44, 116, 179, 0.9); }
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1.2rem; /* Increased font size for better readability */
+  }
+  
+  th, td {
+    padding: 18px; /* Increased padding for better spacing */
+    border: 1px solid rgba(44, 116, 179, 0.3);
+    text-align: left;
+  }
+  
+  th {
+    background: rgba(44, 116, 179, 0.2);
+    font-weight: 600;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #2C74B3;
+    color: white;
+    padding: 8px 16px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1rem; /* Adjusted font size */
+  }
+  
+  .btn.delete {
+    background-color: #ff4d4d;
+  }
+  
+  .btn:hover {
+    background-color: #205295;
+  }

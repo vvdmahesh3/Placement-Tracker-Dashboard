@@ -1,0 +1,224 @@
+/* Global Styles for Placement Tracker Dashboard */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0A2647; /* Midnight Blue */
+  color: white;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+  color: #2C74B3; /* Light Cyan */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #205295; /* Sky Blue */
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #2C74B3; /* Light Cyan */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #205295; /* Sky Blue */
+  transform: scale(1);
+}
+
+.btn.delete {
+  background-color: #ff4d4d; /* Red for delete buttons */
+}
+
+.btn.delete:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Forms */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #2C74B3; /* Light Cyan */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #144272; /* Ocean Blue */
+  color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #205295; /* Sky Blue */
+  box-shadow: 0 0 5px rgba(44, 116, 179, 0.5);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #2C74B3; /* Light Cyan */
+  text-align: left;
+}
+
+th {
+  background-color: #144272; /* Ocean Blue */
+  font-weight: 600;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* Loading Animation */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #2C74B3;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none; /* Hide by default */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode input, .dark-mode textarea, .dark-mode select {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hide by default */
+  z-index: 1000;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #144272;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2C74B3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none; /* Hide by default */
+  z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+}

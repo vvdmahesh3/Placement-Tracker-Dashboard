@@ -1,0 +1,7 @@
+Create Files:
+
+index.html (for the frontend structure).
+
+style.css (for styling).
+
+script.js (for functionality and Firebase integration).

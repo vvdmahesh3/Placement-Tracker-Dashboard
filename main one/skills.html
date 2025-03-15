@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Tracker - Placement Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skills.css">
+</head>
+<body class="skills-page">
+  <!-- Particle.js Container -->
+  <div id="particles-js"></div>
+
+  <!-- Skill Tracker Content -->
+  <div class="content">
+    <h1 class="skills-heading">SKILL TRACKER</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+          <th>Progress</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fab fa-js-square skill-icon"></i> JavaScript</td>
+          <td>Intermediate</td>
+          <td>
+            <div class="progress-bar">
+              <div class="progress" style="width: 69%;"></div>
+            </div>
+            <span>69%</span>
+          </td>
+          <td>
+            <button class="btn">✏️ Edit</button>
+            <button class="btn delete">🗑️ Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fab fa-python skill-icon"></i> Python</td>
+          <td>Advanced</td>
+          <td>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+            <span>90%</span>
+          </td>
+          <td>
+            <button class="btn">✏️ Edit</button>
+            <button class="btn delete">🗑️ Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>🗣️ Communication</td>
+          <td>Pro</td>
+          <td>
+            <div class="progress-bar">
+              <div class="progress" style="width: 101%;"></div>
+            </div>
+            <span>101%</span>
+          </td>
+          <td>
+            <button class="btn">✏️ Edit</button>
+            <button class="btn delete">🗑️ Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>🔥 Firebase Database Setup</td>
+          <td>Beginner</td>
+          <td>
+            <div class="progress-bar">
+              <div class="progress" style="width: 10%;"></div>
+            </div>
+            <span>10%</span>
+          </td>
+          <td>
+            <button class="btn">✏️ Edit</button>
+            <button class="btn delete">🗑️ Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Back Button -->
+    <div class="back-button">
+      <button class="button-86" role="button" onclick="window.location.href='dashboard.html'">🔙 BACK</button>
+    </div>
+  </div>
+
+  <!-- Link JS files -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>

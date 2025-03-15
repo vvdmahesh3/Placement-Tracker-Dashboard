@@ -1,0 +1,180 @@
+/* Login Page Styles */
+body.login-page {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace; /* Cool font */
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Particle.js Container */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0A2647, #144272, #2C74B3, #205295); /* Blue gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite; /* Reduced time for color change */
+    z-index: -1; /* Place behind the login box */
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Glow Effect for Particles */
+  #particles-js canvas {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Glow effect */
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1; /* Place above the particle background */
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px; /* Increased padding */
+    width: 100%;
+    max-width: 500px; /* Increased size */
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Login Heading with Icon Animation */
+  .login-box h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Increased font size */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .login-box h1 i {
+    font-size: 2.5rem; /* Icon size */
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Input Fields */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .input-group input {
+    width: calc(100% - 52px); /* Adjust width to account for padding and icon */
+    padding: 12px 12px 12px 40px; /* Padding for the icon */
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .input-group input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(44, 116, 179, 0.5); /* Add a subtle focus effect */
+  }
+  
+  /* Login Button (Button-73 with Theme Colors) */
+  .button-73 {
+    appearance: none;
+    background-color: #2C74B3; /* Blue theme color */
+    border-radius: 40em;
+    border-style: none; /* Ensure no border */
+    box-shadow: #205295 0 -12px 6px inset; /* Darker blue for shadow */
+    box-sizing: border-box;
+    /*color: white; /* White text */
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace; /* Cool font */
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -.24px;
+    margin: 0;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%; /* Full width */
+  }
+  
+  .button-73:hover {
+    background-color: #205295; /* Darker blue on hover */
+    box-shadow: #144272 0 -6px 8px inset; /* Even darker blue for shadow */
+    transform: scale(1.05);
+  }
+  
+  .button-73:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .button-73 {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
+    }
+  }
+  
+  /* Sign Up Link */
+  .signup-link {
+    margin-top: 15px;
+    font-size: 1.9rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .signup-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }

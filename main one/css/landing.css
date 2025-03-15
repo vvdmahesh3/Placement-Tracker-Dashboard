@@ -1,0 +1,141 @@
+/* Landing Page Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body.landing-page {
+    background: radial-gradient(circle, lemonchiffon, black 25%, skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+body.landing-page:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent, black 25%, transparent);
+    animation: color 1.5s infinite ease-out alternate;
+    opacity: 0;
+    z-index: -1;
+}
+
+@keyframes color {
+    0% {
+        background: radial-gradient(circle, transparent, black 25%, transparent);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Content Styles */
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+.neon-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-shadow: 0 0 5px #2C74B3, 0 0 10px #2C74B3, 0 0 20px #2C74B3;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+/* Creative Quote Styles */
+.creative-quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+}
+
+.creative-quote::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #2C74B3, #205295);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.creative-quote:hover::after {
+    transform: scaleX(1);
+}
+
+.creative-quote::before {
+    content: '🌟';
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.creative-quote:hover {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Button Container Styles */
+.button-container {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+/* Cool Button Styles */
+.cool-button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    text-decoration: none;
+}
+
+.cool-button:hover {
+    border-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cool-button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+.cool-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
